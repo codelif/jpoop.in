@@ -1,0 +1,172 @@
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+  background: #fafafa;
+}
+
+.hero {
+  /* background: linear-gradient(to right, #a8c0ff, #3f2b96);  */
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("backdrop.jpg");
+  min-height: 100vh;
+  display: flex;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  padding: 0 20px;
+}
+
+.hero-title {
+  font-family: 'Cabin Sketch', sans-serif;
+  font-size: 5em;
+  font-weight: 700;
+  font-style: normal;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); */
+}
+
+.hero-subtitle {
+  font-size: 1.2em;
+  margin: 20px 0;
+  line-height: 1.5;
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6); */
+}
+
+.hero-button {
+  display: inline-block;
+  background: #fff;
+  color: #3f2b96;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 20px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.hero-button:hover {
+  background: #e0e0e0;
+}
+
+.about-section,
+.mops-section {
+  padding: 60px 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-section h2,
+.mops-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.about-section p,
+.mops-section p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.mops-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.mops-list li {
+  margin: 10px 0;
+}
+
+.mops-list a {
+  color: #3f2b96;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.mops-list a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  background: #f5f5f5;
+  padding: 20px 0;
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+.footer-container p {
+  margin: 5px 0;
+}
+
+.contribute-section {
+  padding: 60px 20px;
+  background: #fafafa;
+  text-align: center;
+}
+
+.contribute-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.contribute-section p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.contribute-section a {
+  color: #3f2b96;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contribute-section a:hover {
+  text-decoration: underline;
+}
+
+/* Footer GitHub Link */
+.github-link {
+  display: inline-flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
+
+.github-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.inline-code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f5f5f5;
+  color: #d63384;
+  padding: 2px 4px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 0.95em;
+  white-space: nowrap;
+}
