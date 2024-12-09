@@ -168,3 +168,40 @@ body {
   font-size: 0.95em;
   white-space: nowrap;
 }
+
+.plungers-section {
+  padding: 60px 20px;
+  background: #f9f9f9;
+  text-align: center;
+}
+
+.plungers-section h2 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+.plungers-section p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.plungers-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.plungers-list li {
+  margin: 10px 0;
+}
+
+.plungers-list a {
+  color: #3f2b96;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.plungers-list a:hover {
+  text-decoration: underline;
+}
