@@ -1,0 +1,17 @@
+{
+  "regions": [
+    "bom1"
+  ],
+  "builds": [
+    {
+      "src": "./api/api.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api"
+    }
+  ]
+}

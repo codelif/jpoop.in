@@ -7,7 +7,7 @@ body {
 
 .hero {
   /* background: linear-gradient(to right, #a8c0ff, #3f2b96);  */
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("backdrop.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/images/backdrop.jpg");
   min-height: 100vh;
   display: flex;
   background-position: center top;
