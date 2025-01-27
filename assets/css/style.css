@@ -205,3 +205,19 @@ body {
 .plungers-list a:hover {
   text-decoration: underline;
 }
+
+.clipboard-tooltip {
+  position: absolute;
+  bottom: -30px;          /* Adjust as needed to appear below the link */
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  visibility: hidden;     /* Hidden by default */
+  opacity: 0;             /* Hidden by default */
+  transition: opacity 0.3s ease-out;
+  white-space: nowrap;    /* Keep the text on one line */
+  z-index: 10;            /* Ensure it appears on top */
+}

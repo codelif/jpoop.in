@@ -55,6 +55,11 @@
         <li><a href="https://planner.jpoop.in">Planner</a> – Save yourself from the cryptic JIIT Time Tables and low
           attendance (no guarantee for the last one).</li>
         <li><a href="https://wifi.jpoop.in">???</a> – <span class="inline-code">curl https://wifi.jpoop.in</span></li>
+        <li style="position: relative;">
+          <a id="copyLink" href="javascript:void(0)" onclick="copyMcLink(event)">mc.jpoop.in</a>
+          <span>– Bored while on the loo? Hope on to our Minecraft server.</span>
+          <span id="clipboardTooltip" class="clipboard-tooltip">Copied to clipboard!</span>
+        </li>
       </ul>
     </div>
   </section>
@@ -105,6 +110,26 @@
   <script>
     // Update the footer year automatically
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    function copyMcLink(event) {
+      event.preventDefault();
+
+      const textToCopy = 'mc.jpoop.in';
+
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        const tooltip = document.getElementById('clipboardTooltip');
+        tooltip.style.visibility = 'visible';
+        tooltip.style.opacity = '1';
+
+        // Hide tooltip after 2 seconds
+        setTimeout(() => {
+          tooltip.style.visibility = 'hidden';
+          tooltip.style.opacity = '0';
+        }, 2000);
+      }).catch(err => {
+        console.error('Failed to copy text: ', err);
+      });
+    }
   </script>
 </body>
 
