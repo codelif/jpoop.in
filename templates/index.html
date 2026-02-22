@@ -1,138 +1,225 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="JPoop: cleaning up the mess that is JIIT. A suite of tools to sanitize your hands from Jpee."
+    />
+    <title>JPoop | Cleaning the bad diarrhea, that is JIIT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+    <link
+      rel="icon"
+      href="{{ url_for('static', filename='favicon.png') }}"
+      type="image/png"
+    />
+    <link
+      rel="shortcut icon"
+      href="{{ url_for('static', filename='favicon.png') }}"
+      type="image/png"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description"
-    content="JPoop: cleaning up the mess that is JIIT. A suite of tools to sanitize your hands from Jpee.">
-  <title>JPoop | Cleaning the bad diarrhea, that is JIIT</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
-  <link rel="icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png" />
-  <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}" type="image/png" />
-</head>
+  <body>
+    <header class="hero">
+      <div class="hero-content">
+        <h1 class="hero-title">JPoop</h1>
+        <p class="hero-subtitle">Cleaning the bad diarrhea, that is JIIT.</p>
+        <a href="#mops" class="hero-button">Explore Tools</a>
+      </div>
+    </header>
 
-<body>
-  <header class="hero">
-    <div class="hero-content">
-      <h1 class="hero-title">JPoop</h1>
-      <p class="hero-subtitle">Cleaning the bad diarrhea, that is JIIT.</p>
-      <a href="#mops" class="hero-button">Explore Tools</a>
-    </div>
-  </header>
+    <section id="about" class="about-section">
+      <div class="container">
+        <h2>About JPoop</h2>
+        <p>
+          JPoop is a suite of sanity-saving tools created by students who’ve had
+          enough of JIIT’s cryptic time-tables, the god-forsaken webportal, and
+          general nonsense. Our goal is to mop up the grime and help you
+          navigate JIIT’s environment without losing your mind.
+        </p>
+        <p>
+          Think of JPoop as your personal disinfectant: a collection of
+          resources and utilities to smooth out the bumps, filter out the noise,
+          and turn a dreadful experience into something at least tolerable. If
+          JIIT is the mess, JPoop is the cleaning solution.
+        </p>
+      </div>
+    </section>
 
-  <section id="about" class="about-section">
-    <div class="container">
-      <h2>About JPoop</h2>
-      <p>
-        JPoop is a suite of sanity-saving tools created by students who’ve had enough of JIIT’s
-        cryptic time-tables, the god-forsaken webportal, and general nonsense. Our goal is to mop up the grime and
-        help you navigate JIIT’s environment without losing your mind.
-      </p>
-      <p>
-        Think of JPoop as your personal disinfectant: a collection of resources and utilities to
-        smooth out the bumps, filter out the noise, and turn a dreadful experience into something at least
-        tolerable. If JIIT is the mess, JPoop is the cleaning solution.
-      </p>
-    </div>
-  </section>
+    <section id="mops" class="mops-section">
+      <div class="container">
+        <h2>Our Mops</h2>
+        <p>Use these mops to clean up the chaos:</p>
+        <ul class="mops-list">
+          <li>
+            <a href="https://codeblech.github.io/jportal">JPortal</a> – It
+            doesn't get any messier than Attendance! Though last endsem's cram
+            session will give you a bad trip to the toilet. (credits to da goat:
+            <a href="https://github.com/codeblech" target="_blank">@codeblech</a
+            >)
+          </li>
+          <li>
+            <a href="https://jiit.pythonanywhere.com">JPGram</a> – Photo wall
+            for JPee Hubs, coz the college doesn't have one updated.
+          </li>
+          <li>
+            <a href="https://planner.jpoop.in">Planner</a> – Save yourself from
+            the cryptic JIIT Time Tables and low attendance (no guarantee for
+            the last one).
+          </li>
+          <li>
+            <span class="title-no-link">WifiAutoLogger</span> •
+            <a
+              class="download"
+              href="https://github.com/life2harsh/WiFiAutologger/releases/download/installer/"
+              >Windows</a
+            >
+            •
+            <a
+              class="download"
+              href="https://github.com/life2harsh/WiFiAutologger/releases/tag/android"
+              >Android</a
+            >
+            – Sophos logging out every n minutes? No worries, got you covered.
+          </li>
+          <li>
+            <a href="https://mess-schedular.vercel.app">Mess Scheduler</a> –
+            Tired of asking around the menu pic? Save some time and hop on this.
+          </li>
+          <li>
+            <a href="https://wifi.jpoop.in">???</a> –
+            <span class="inline-code">curl https://wifi.jpoop.in</span>
+          </li>
+          <li style="position: relative">
+            <a
+              id="copyLink"
+              href="javascript:void(0)"
+              onclick="copyMcLink(event)"
+              >mc.jpoop.in</a
+            >
+            <span
+              >– Bored while on the loo? Hope on to our Minecraft server.</span
+            >
+            <span id="clipboardTooltip" class="clipboard-tooltip"
+              >Copied to clipboard!</span
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <section id="mops" class="mops-section">
-    <div class="container">
-      <h2>Our Mops</h2>
-      <p>Use these mops to clean up the chaos:</p>
-      <ul class="mops-list">
-        <li><a href="https://codeblech.github.io/jportal">JPortal</a> – It doesn't get any messier than Attendance!
-          Though last endsem's cram session will give you a bad trip to the toilet.
-          (credits to da goat: <a href="https://github.com/codeblech" target="_blank">@codeblech</a>)</li>
-        <li><a href="https://jiit.pythonanywhere.com">JPGram</a> – Photo wall for JPee Hubs, coz the college doesn't have one updated.</li>
-        <li><a href="https://planner.jpoop.in">Planner</a> – Save yourself from the cryptic JIIT Time Tables and low
-          attendance (no guarantee for the last one).</li>
-        <li><span class="title-no-link">WifiAutoLogger</span> • <a class="download" href="https://github.com/life2harsh/WiFiAutologger/releases/download/installer/">Windows</a> • <a class="download" href="https://github.com/life2harsh/WiFiAutologger/releases/tag/android">Android</a> – Sophos logging out every n minutes? No worries, got you covered.</li>
-        <li><a href="https://mess-schedular.vercel.app">Mess Scheduler</a> – Tired of asking around the menu pic? Save some time and hop on this.</li>
-        <li><a href="https://wifi.jpoop.in">???</a> – <span class="inline-code">curl https://wifi.jpoop.in</span></li>
-        <li style="position: relative;">
-          <a id="copyLink" href="javascript:void(0)" onclick="copyMcLink(event)">mc.jpoop.in</a>
-          <span>– Bored while on the loo? Hope on to our Minecraft server.</span>
-          <span id="clipboardTooltip" class="clipboard-tooltip">Copied to clipboard!</span>
-        </li>
-      </ul>
-    </div>
-  </section>
+    <section id="plungers" class="plungers-section">
+      <div class="container">
+        <h2>Our Plungers</h2>
+        <p>
+          Are you building the next great mop? Use these plungers to unblock
+          your sewer pipeline and make your life easier:
+        </p>
+        <ul class="plungers-list">
+          <li>
+            <a href="https://github.com/codeblech/jsjiit">jsjiit</a> – The
+            library that powers JPortal. The drainage system to JIIT Webpooptal.
+          </li>
+          <li>
+            <a href="https://github.com/codelif/pyjiit">pyjiit</a> – A python
+            library for the same WebPooptal.
+          </li>
+          <li>
+            <a href="https://github.com/codelif/jiit-marks">jiit-marks</a> – A
+            marks report PDF parser written in python.
+          </li>
+          <li>
+            <a href="https://github.com/codelif/jiit-tt-parser"
+              >jiit-tt-parser</a
+            >
+            – Parse your TTs (Time Tables). Powers JIIT Planner.
+          </li>
+        </ul>
+      </div>
+    </section>
 
-  <section id="plungers" class="plungers-section">
-    <div class="container">
-      <h2>Our Plungers</h2>
-      <p>
-        Are you building the next great mop? Use these plungers to unblock your sewer pipeline and make your
-        life easier:
-      </p>
-      <ul class="plungers-list">
-        <li><a href="https://github.com/codeblech/jsjiit">jsjiit</a> – The library that powers JPortal. The drainage system to JIIT Webpooptal.</li>
-        <li><a href="https://github.com/codelif/pyjiit">pyjiit</a> – A python library for the same WebPooptal.</li>
-        <li><a href="https://github.com/codelif/jiit-marks">jiit-marks</a> – A marks report PDF parser written in python.</li>
-        <li><a href="https://github.com/codelif/jiit-tt-parser">jiit-tt-parser</a> – Parse your TTs (Time Tables). Powers JIIT Planner.</li>
-      </ul>
-    </div>
-  </section>
+    <section id="contribute" class="contribute-section">
+      <div class="container">
+        <h2>Contribute Your Tool</h2>
+        <p>
+          Have a tool that you think can help clean up the mess? We'd love to
+          host it! Submit your tool and request a subdomain by contacting us
+          through our
+          <a href="https://github.com/codelif/jpoop.in" target="_blank"
+            >GitHub repository</a
+          >.
+        </p>
+        <p>Join us in making JIIT a better place, one tool at a time!</p>
+      </div>
+    </section>
 
-  <section id="contribute" class="contribute-section">
-    <div class="container">
-      <h2>Contribute Your Tool</h2>
-      <p>
-        Have a tool that you think can help clean up the mess? We'd love to host it!
-        Submit your tool and request a subdomain by contacting us through our
-        <a href="https://github.com/codelif/jpoop.in" target="_blank">GitHub repository</a>.
-      </p>
-      <p>
-        Join us in making JIIT a better place, one tool at a time!
-      </p>
-    </div>
-  </section>
+    <footer class="footer">
+      <div class="container footer-container">
+        <p>&copy; <span id="year"></span> JPoop. All rights reserved.</p>
+        <p>
+          <small
+            >Crafted by students tired of the BS, for students who deserve
+            better.</small
+          >
+        </p>
+        <p>
+          <a
+            href="https://github.com/codelif/jpoop.in"
+            target="_blank"
+            class="github-link"
+          >
+            <img
+              src="{{ url_for('static', filename='icons/github-icon.svg') }}"
+              alt="GitHub"
+              class="github-icon"
+            />
+            Star us at our GitHub Repo
+          </a>
+        </p>
+      </div>
+    </footer>
 
-  <footer class="footer">
-    <div class="container footer-container">
-      <p>&copy; <span id="year"></span> JPoop. All rights reserved.</p>
-      <p><small>Crafted by students tired of the BS, for students who deserve better.</small></p>
-      <p>
-        <a href="https://github.com/codelif/jpoop.in" target="_blank" class="github-link">
-          <img src="{{ url_for('static', filename='icons/github-icon.svg') }}" alt="GitHub" class="github-icon" /> Star
-          us at our GitHub Repo
-        </a>
-      </p>
-    </div>
-  </footer>
+    <script>
+      // Update the footer year automatically
+      document.getElementById("year").textContent = new Date().getFullYear();
 
-  <script>
-    // Update the footer year automatically
-    document.getElementById('year').textContent = new Date().getFullYear();
+      function copyMcLink(event) {
+        event.preventDefault();
 
-    function copyMcLink(event) {
-      event.preventDefault();
+        const textToCopy = "mc.jpoop.in";
 
-      const textToCopy = 'mc.jpoop.in';
+        navigator.clipboard
+          .writeText(textToCopy)
+          .then(() => {
+            const tooltip = document.getElementById("clipboardTooltip");
+            tooltip.style.visibility = "visible";
+            tooltip.style.opacity = "1";
 
-      navigator.clipboard.writeText(textToCopy).then(() => {
-        const tooltip = document.getElementById('clipboardTooltip');
-        tooltip.style.visibility = 'visible';
-        tooltip.style.opacity = '1';
-
-        // Hide tooltip after 2 seconds
-        setTimeout(() => {
-          tooltip.style.visibility = 'hidden';
-          tooltip.style.opacity = '0';
-        }, 2000);
-      }).catch(err => {
-        console.error('Failed to copy text: ', err);
-      });
-    }
-  </script>
-</body>
-
+            // Hide tooltip after 2 seconds
+            setTimeout(() => {
+              tooltip.style.visibility = "hidden";
+              tooltip.style.opacity = "0";
+            }, 2000);
+          })
+          .catch((err) => {
+            console.error("Failed to copy text: ", err);
+          });
+      }
+    </script>
+  </body>
 </html>
