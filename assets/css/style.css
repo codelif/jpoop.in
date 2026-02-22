@@ -221,3 +221,17 @@ body {
   white-space: nowrap;    /* Keep the text on one line */
   z-index: 10;            /* Ensure it appears on top */
 }
+
+.title-no-link {
+  color: #3f2b96;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.title-no-link:hover {
+  text-decoration: none;
+}
+
+.download {
+  color: #1a6f82!important;
+}
